@@ -1,0 +1,30 @@
+From 1deea25dc87a52609c95ca26cd6f5d7d39e3568a Mon Sep 17 00:00:00 2001
+From: Aymeric Aillet <aymeric.aillet@iot.bzh>
+Date: Mon, 23 Sep 2024 10:49:26 +0200
+Subject: [PATCH 2/2] Add phandle for cortex-M4F init
+
+Needed by the rprocmsg driver, the phandle was missing so it doesn't
+load the reserved memory regions because of the lack of nodes
+identification. Adding the phandle manually solved the problem but this
+is an ugly fix!
+
+Signed-off-by: Aymeric Aillet <aymeric.aillet@iot.bzh>
+---
+ arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts b/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
+index 2be774b54720..8b57623f7212 100644
+--- a/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
++++ b/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
+@@ -616,6 +616,7 @@ &mcu_m4fss {
+ 	mboxes = <&mailbox0_cluster0 &mbox_m4_0>;
+ 	memory-region = <&mcu_m4fss_dma_memory_region>,
+ 			<&mcu_m4fss_memory_region>;
++	phandle = <0x6b>;
+ };
+ 
+ &mailbox0_cluster0 {
+-- 
+2.25.1
+

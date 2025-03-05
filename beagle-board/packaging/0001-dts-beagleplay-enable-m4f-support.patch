@@ -1,0 +1,73 @@
+From 7a19b95377c9dc298ce2fb830762c64c0fa6d027 Mon Sep 17 00:00:00 2001
+From: Aymeric Aillet <aymeric.aillet@iot.bzh>
+Date: Mon, 23 Sep 2024 10:32:41 +0200
+Subject: [PATCH 1/2] dts: beagleplay: enable m4f support
+
+to apply on top of beagle linux:
+branch: 6.6.32-ti-arm64-r10
+sha: 0feca8b61e0fe5efa5646373450fbe86468b5857
+
+Signed-off-by: Aymeric Aillet <aymeric.aillet@iot.bzh>
+---
+ arch/arm64/boot/dts/ti/k3-am62-mcu.dtsi       |  2 +-
+ .../arm64/boot/dts/ti/k3-am625-beagleplay.dts | 25 +++++++++++++++++++
+ 2 files changed, 26 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm64/boot/dts/ti/k3-am62-mcu.dtsi b/arch/arm64/boot/dts/ti/k3-am62-mcu.dtsi
+index dab48bfd7869..df8ff53480e2 100644
+--- a/arch/arm64/boot/dts/ti/k3-am62-mcu.dtsi
++++ b/arch/arm64/boot/dts/ti/k3-am62-mcu.dtsi
+@@ -186,6 +186,6 @@ mcu_m4fss: m4fss@5000000 {
+ 		ti,sci = <&dmsc>;
+ 		ti,sci-dev-id = <9>;
+ 		ti,sci-proc-ids = <0x18 0xff>;
+-		status = "disabled";
++		//status = "disabled";
+ 	};
+ };
+diff --git a/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts b/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
+index 0c94911d7a1f..2be774b54720 100644
+--- a/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
++++ b/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
+@@ -85,6 +85,18 @@ secure_ddr: optee@9e800000 {
+ 			no-map;
+ 		};
+ 
++		mcu_m4fss_dma_memory_region: m4f-dma-memory@9cb00000 {
++			compatible = "shared-dma-pool";
++			reg = <0x00 0x9cb00000 0x00 0x100000>;
++			no-map;
++		};
++
++		mcu_m4fss_memory_region: m4f-memory@9cc00000 {
++			compatible = "shared-dma-pool";
++			reg = <0x00 0x9cc00000 0x00 0xe00000>;
++			no-map;
++		};
++
+ 		wkup_r5fss0_core0_dma_memory_region: r5f-dma-memory@9db00000 {
+ 			compatible = "shared-dma-pool";
+ 			reg = <0x00 0x9db00000 0x00 0xc00000>;
+@@ -600,6 +612,19 @@ &mcu_i2c0 {
+ 	status = "okay";
+ };
+ 
++&mcu_m4fss {
++	mboxes = <&mailbox0_cluster0 &mbox_m4_0>;
++	memory-region = <&mcu_m4fss_dma_memory_region>,
++			<&mcu_m4fss_memory_region>;
++};
++
++&mailbox0_cluster0 {
++	mbox_m4_0: mbox-m4-0 {
++		ti,mbox-rx = <0 0 0>;
++		ti,mbox-tx = <1 0 0>;
++	};
++};
++
+ &usbss0 {
+ 	bootph-all;
+ 	ti,vbus-divider;
+-- 
+2.25.1
+
