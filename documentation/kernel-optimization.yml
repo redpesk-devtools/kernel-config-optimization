@@ -1,0 +1,22 @@
+type: books
+books:
+  - id: kernel-optimization
+    title: Optimization of the Linux kernel
+    description:
+    keywords: kernel, uboot, systemd, systemd-analyze
+    chapters:
+      - url: measuring-the-boot-time.md
+        name: Measuring boot time
+        order: 1
+      - url: optimize-boot-time.md
+        name: Optimize boot time
+        order: 2
+      - url: configure-linux-kernel.md
+        name: Configuring the Linux Kernel for Faster Boot
+        order: 3
+      - url: optimize-boot-strategies.md
+        name: Optimizing boot strategies
+        order: 4
+      - url: boot-time-measure.md
+        name: Boot Time Measure, before and after optimization
+        order: 5
