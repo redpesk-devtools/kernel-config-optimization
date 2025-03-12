@@ -1,13 +1,17 @@
-# Configure linux kernel
+# Configure Linux Kernel
 
-* Kernel-specific optimizations: minimal modules, kernel parameters, initrd, and others.
-* Building a leaner kernel for faster boot time.
+* Kernel-specific optimizations: minimal modules, kernel parameters, initrd, and others
+* Building a reduced kernel (with less modules for examples) for faster boot time
 
-## Generating a .cfg file for linux kernel configuration
+Please note in our usecase, we used the [BeagleBoard BeaglePlay](https://docs.redpesk.bzh/docs/en/master/redpesk-os/boards/docs/boards/beagleplay.html) as our reference.
 
-You may want to customize your linux kernel configuration with a cfg configuration fragment.
+We used Linux kernel version 6.6, you can check some of our sources [here](beagle-board/packaging)
 
-A easy way to do that is to:
+## Generating a .cfg file for Linux Kernel configuration
+
+You may want to customize your Linux Kernel configuration with a configuration fragment (called `cfg`).
+
+An easy way to do that is to:
 
 ```bash
 cd ${KERNEL_SOURCE}
@@ -16,9 +20,9 @@ make menuconfig
 diff --unchanged-line-format= --old-line-format= --new-line-format="%L" ./.config.sav ./.config > 01-my-file.cfg
 ```
 
-## Merge a .cfg file to linux kernel configuration
+## Merge a .cfg file to Linux Kernel configuration
 
-If you want to merge a cfg configuration fragment to your linux kernel configuration just:
+If you want to merge a cfg configuration fragment to your Linux Kernel configuration just:
 
 ```bash
 scripts/kconfig/merge_config.sh -m -r .config 01-my-file.cfg
@@ -32,7 +36,7 @@ for CFG in *.cfg; do
 done
 ```
 
-## Test your new kernel
+## Test your new Kernel
 
 After the build of your kernel packages, you can simply copy them to your board and install them.
 
@@ -47,13 +51,17 @@ ssh root@X.X.X.X dnf install -y /*;
 
 ## Disable unused drivers
 
-Disabling unused drivers is a key step in optimizing the boot time of a Linux kernel, especially for embedded or industrial systems where specific hardware configurations are well-defined. Below is a list of common driver categories and examples of drivers you can consider disabling to streamline your kernel and reduce boot time:
+Disabling unused drivers is a key step in optimizing the boot time of a Linux Kernel, especially for embedded or industrial systems where specific hardware configurations are well-defined.
 
-Use make menuconfig during kernel compilation to disable unnecessary drivers. Navigate to "Device Drivers" and uncheck drivers not required for the system. Smaller kernels reduce initialization times.
+Use `make menuconfig` to go to the configuration of the Kernel!
 
-If your system doesn’t require certain networking features, you can disable:
+*This requires to already have your defconfig declared and used*. For more reference, go [here](https://docs.kernel.org/kbuild/kconfig.html)!
+
+So our goal is to disable unnecessary drivers. Navigate to `Device Drivers` and uncheck drivers not required for the system. See our examples below!
 
 ### 01 Unnecessary protocols
+
+If your system doesn’t require certain networking features:
 
 * Appletalk: `CONFIG_ATALK`
 * AX.25 and Packet Radio: `CONFIG_X25`
@@ -63,7 +71,7 @@ If your system doesn’t require certain networking features, you can disable:
 
 ### 02 Wireless
 
-If your system doesn’t use Wi-Fi
+If your system doesn’t use Wi-Fi or specific wireless features:
 
 * Wireless LAN drivers
   * Disable all unused drivers under `CONFIG_WLAN`.
@@ -78,7 +86,7 @@ If your system doesn’t use Wi-Fi
 
 ### 03 Bluetooth
 
-If your system doesn’t use bluetooth
+If your system doesn’t use Bluetooth:
 
 * Disable Bluetooth stack entirely: `CONFIG_BT`
 * Disable profiles and protocols like:
@@ -100,7 +108,7 @@ If your system has limited or no network requirements:
 
 ### 04 Filesystems
 
-Disable filesystems you don’t use
+Disable filesystems you don’t use (on redpesk OS we only use `vfat` and `ext4` filesystems for example):
 
 * Network filesystems:
   * CIFS/SMB (Windows Sharing): `CONFIG_CIFS`
@@ -130,9 +138,9 @@ For headless systems or if the display is not used during boot:
 * Console support:
   * Reduce console support: `CONFIG_VGA_CONSOLE`, `CONFIG_FRAMEBUFFER_CONSOLE`.
 
-### 06 Multimedia (Cameras, TV Tuners, Video Devices)
+### 06 Multimedia (cameras, TV Tuners, video devices)
 
-For systems without multimedia capabilities
+For systems without multimedia capabilities:
 
 * V4L (Video for Linux): `CONFIG_MEDIA_SUPPORT`(main config), `CONFIG_VIDEO_DEV`
 * TV and radio tuner support: `CONFIG_DVB_CORE`, `CONFIG_MEDIA_TUNER`
@@ -145,7 +153,7 @@ For systems without multimedia capabilities
 
 ### 07 Input devices
 
-For systems without input peripherals
+For systems without input peripherals:
 
 * Keyboards and mice:
   * PS/2 Keyboard/Mouse: `CONFIG_KEYBOARD_ATKBD`
@@ -159,7 +167,7 @@ For systems without input peripherals
 
 ### 08 Storage
 
-For unused storage controllers and filesystems
+For unused storage controllers and filesystems:
 
 * SCSI and RAID:
   * Disable unnecessary SCSI drivers: `CONFIG_SCSI`, `CONFIG_RAID456`, `CONFIG_DM_RAID`.
@@ -170,7 +178,7 @@ For unused storage controllers and filesystems
 
 ### 09 Sound
 
-For systems without audio
+For systems without audio needs:
 
 * Sound subsystem:
   * Disable ALSA and OSS: `CONFIG_SOUND`.
@@ -183,7 +191,7 @@ For systems without audio
 
 ### 10 Power management
 
-If power-saving features aren’t needed
+If power-saving features aren’t needed:
 
 * CPU frequency scaling:
   * `CONFIG_CPU_FREQ` and governors like `CONFIG_CPU_FREQ_GOV_ONDEMAND`.
@@ -200,7 +208,7 @@ If power-saving features aren’t needed
 
 For systems without batteries or power supply monitoring:
 
-* Battery management and Power supply monitoring:
+* Battery management and Power supply monitoring
   * `CONFIG_POWER_SUPPLY_HWMON`
   * `CONFIG_GENERIC_ADC_BATTERY`
   * `CONFIG_BATTERY_DS2760`
@@ -212,7 +220,7 @@ For systems without batteries or power supply monitoring:
 
 ### 12 Legacy hardware
 
-For systems that don’t use old hardware
+For systems that don’t use old specific hardware:
 
 * Parallel port:
   * `CONFIG_PARPORT`, `CONFIG_PRINTER`, `CONFIG_USB_CONFIGFS_F_PRINTER`
@@ -289,7 +297,7 @@ For embedded or industrial systems that do not use specialized hardware:
 
 ### 18 Virtualization and emulation
 
-If virtualization is not required
+If virtualization is not required:
 
 * KVM (Kernel Virtual Machine):
   * `CONFIG_KVM`
@@ -342,11 +350,9 @@ If your system does not use certain USB peripherals, disable unnecessary drivers
 * IRQ debugging:
   * Disable: `CONFIG_DEBUG_IRQFLAGS`, `CONFIG_DEBUG_STACKOVERFLOW`.
 
-By carefully disabling unused drivers, you can streamline the kernel, reduce boot time, and improve overall performance.
-
 ### 23 Miscellaneous
 
-At the you can do Disable debug feature:
+If you don't use specific debugging features:
 
 * Debugging options:
   * Disable kernel debugging to reduce overhead: `CONFIG_EXPERT`, `CONFIG_DEBUG_KERNEL`, `CONFIG_PRINTK`.
@@ -355,8 +361,6 @@ At the you can do Disable debug feature:
 ### Tips for safe optimization
 
 * Start with known requirements
-  * Clearly define the hardware and peripherals your system uses.
+  * Clearly define the hardware and peripherals your system uses
 * Disable features incrementally
-  * Test the system after disabling each set of features to verify functionality.
-* Document changes
-  * Keep a log of what’s disabled for easy troubleshooting and reference.
+  * Test the system after disabling each set of features to verify functionality
