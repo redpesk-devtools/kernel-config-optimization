@@ -1,34 +1,38 @@
 
 # Measuring the boot time
 
-* Overview of boot time measurement.
-* Tools to measure boot time (e.g., systemd-analyze, dmesg, bootchart).
-* How to track boot events and milestones.
+* Overview of boot time measurement
+* Tools to measure boot time (e.g., systemd-analyze, dmesg, bootchart)
+* How to track boot events and milestones
 
-Measuring the Linux boot time involves capturing how long it takes for the system to transition from power-on or bootloader execution to a fully operational state. Here’s a step-by-step guide:
+Measuring boot time on redpesk OS involves capturing how long it takes for the system to transition from power-on or bootloader execution to a fully operational state. Here’s a step-by-step guide:
 
 ## Define the start and end points
 
 * Start Point:
-  Power-on or the bootloader's first activity.
+  Power-on or the bootloader's first activity
 * End Point:
-  When a specific service or application is ready. The appearance of a login prompt or GUI. A signal sent from the system (e.g., a network connection established).
+  When a specific service or application is ready. The appearance of a login prompt or GUI. A signal sent from the system (e.g. specific systemd service like `multi-user.target` or a network connection established)
 
-## Methods to measure boot time
+## Some methods to measure boot time
 
-* Using Bootloader (e.g., U-Boot) Timestamps
+* **Using Bootloader (e.g., U-Boot) Timestamps**
   Enable verbose output in the bootloader. Add timestamps to bootloader messages to measure the time spent in firmware and bootloader stages.
-* Using Kernel Boot Logs
+
+  ```bash
+    CONFIG_TIMESTAMP=y
+  ```
+
+* **Using Kernel Boot Logs**
   Enable Kernel Timestamps: Pass time or initcall_debug as a boot parameter in the kernel command line.
-  Example Add:
 
   ```bash
   loglevel=8 time initcall_debug
   ```
 
-  loglevel=8: Ensures all messages are displayed, including debug messages.
-  time: Displays timestamps for each log entry relative to the boot start.
-  initcall_debug: This shows the time taken by each kernel subsystem or driver initialization function. to the bootloader configuration.
+  - *loglevel=8*: Ensures all messages are displayed, including debug messages.
+  - *time*: Displays timestamps for each log entry relative to the boot start.
+  - *initcall_debug*: This shows the time taken by each kernel subsystem or driver initialization function. to the bootloader configuration.
 
 * Analyze Dmesg Logs:
   Run dmesg after boot to see timestamps for kernel initialization. Subtract the initial timestamp from the last timestamp to calculate boot time.
