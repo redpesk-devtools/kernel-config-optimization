@@ -1,4 +1,4 @@
-# linux boot time optimization
+# Optimizing Linux boot time
 
 This project focuses on optimizing the boot time of Linux systems, including improvements for U-Boot, the Linux kernel, and systemd. It provides recipes and guidelines for reducing boot time, making your system start faster by measuring and optimizing key components of the boot process.
 
