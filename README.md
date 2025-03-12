@@ -20,7 +20,7 @@ The documentation is organized into the following sections:
 1. **Measuring boot time**  
    Learn how to measure boot time accurately using tools like `systemd-analyze`, `bootchart`, and `dmesg`. Establish a baseline to track improvements.
 
-2. **oOtimize boot time**  
+2. **Optimize boot time**  
    Implement general optimizations, such as reducing the number of services, running tasks in parallel, and tweaking other system settings to improve boot time.
 
 3. **Configuring Linux kernel for faster boot**  
