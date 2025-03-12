@@ -3,7 +3,7 @@ books:
   - id: kernel-optimization
     title: Optimization of the Linux kernel
     description:
-    keywords: kernel, uboot, systemd, systemd-analyze
+    keywords: minimal image, kernel, uboot, systemd, systemd-analyze
     chapters:
       - url: measuring-the-boot-time.md
         name: Measuring boot time
