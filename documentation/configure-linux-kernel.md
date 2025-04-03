@@ -5,7 +5,7 @@
 
 Please note in our usecase, we used the [BeagleBoard BeaglePlay](https://docs.redpesk.bzh/docs/en/master/redpesk-os/boards/docs/boards/beagleplay.html) as our reference.
 
-We used Linux kernel version 6.6, you can check some of our sources [here](https://github.com/redpesk-devtools/kernel-config-optimization/tree/main/beagle-board/packaging)
+We used Linux kernel version 6.6, you can check some of our sources [here](https://github.com/redpesk-devtools/kernel-config-optimization/tree/master/beagle-board/packaging)
 
 ## Generating a .cfg file for Linux Kernel configuration
 
