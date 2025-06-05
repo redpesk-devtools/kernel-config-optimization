@@ -1,0 +1,97 @@
+type: books
+books:
+  - id: configure-linux-kernel-fragments
+    title: kernel fragments description
+    description:
+    keywords: kernel fragments, kernel configuration, kernel optimization
+chapters:
+  - url: 01-Disable_IPC,_Timers_and_Audit.md
+    name: Disable IPC, Timers and Audit
+    order: 1
+  - url: 02-Disable_Kconfig,_Scheduler_and_Initrd.md
+    name: Disable Kconfig, Scheduler and Initrd
+    order: 2
+  - url: 03-Disable_Perf,_Profiling_and_Errata.md
+    name: Disable Perf, Profiling and Errata
+    order: 3
+  - url: 04-Disable_EFI,_Power_Management_Debug_and_Energy_Model.md
+    name: Disable EFI, Power Management Debug and Energy Model
+    order: 4
+  - url: 05-Disable_Schedutil,_CPUFreq_Governors_and_Virtualization.md
+    name: Disable Schedutil, CPUFreq Governors and Virtualization
+    order: 5
+  - url: 06-Disable_Kprobes_and_Jump_Labels.md
+    name: Disable Kprobes and Jump Labels
+    order: 6
+  - url: 07-Disable_GCC_Plugins_and_Function_Alignment.md
+    name: Disable GCC Plugins and Function Alignment
+    order: 7
+  - url: 08-Disable_Partition_Parsers.md
+    name: Disable Partition Parsers
+    order: 8
+  - url: 09-Enable_Inline_Spinlocks_and_Kernel_Operations.md
+    name: Enable Inline Spinlocks and Kernel Operations
+    order: 9
+  - url: 10-Disable_Swap,_Memory_Hotplug_and_KSM.md
+    name: Disable Swap, Memory Hotplug and KSM
+    order: 10
+  - url: 11-Disable_Networking:_IPv4,_IPv6,_Netfilter.md
+    name: Disable Networking: IPv4, IPv6, Netfilter
+    order: 11
+  - url: 12-Disable_SCTP,_VLAN,_TIPC,_BATMAN.md
+    name: Disable SCTP, VLAN, TIPC, BATMAN
+    order: 12
+  - url: 13-Disable_Wireless,_Bluetooth,_CAN_and_RFKILL.md
+    name: Disable Wireless, Bluetooth, CAN and RFKILL
+    order: 13
+  - url: 14-Disable_PCI_and_Firmware.md
+    name: Disable PCI and Firmware
+    order: 14
+  - url: 15-Disable_GNSS_and_ProcEvents.md
+    name: Disable GNSS and ProcEvents
+    order: 15
+  - url: 16-Disable_Block_Storage:_NBD_and_AoE.md
+    name: Disable Block Storage: NBD and AoE
+    order: 16
+  - url: 17-Disable_EEPROM_and_Misc_Drivers.md
+    name: Disable EEPROM and Misc Drivers
+    order: 17
+  - url: 18-Disable_Network_Device_Drivers.md
+    name: Disable Network Device Drivers
+    order: 18
+  - url: 19-Disable_PHY_Drivers.md
+    name: Disable PHY Drivers
+    order: 19
+  - url: 20-Disable_PPP,_WLAN_Coexistence,_and_Failover.md
+    name: Disable PPP, WLAN Coexistence, and Failover
+    order: 20
+  - url: 21-Disable_Input_Devices.md
+    name: Disable Input Devices
+    order: 21
+  - url: 22-Disable_Serial,_TTY_and_TPM.md
+    name: Disable Serial, TTY and TPM
+    order: 22
+  - url: 23-Disable_I2C,_Power_and_Sensor_Drivers.md
+    name: Disable I2C, Power and Sensor Drivers
+    order: 23
+  - url: 24-Disable_MFD,_Display_and_Media_Drivers.md
+    name: Disable MFD, Display and Media Drivers
+    order: 24
+  - url: 25-Disable_USB,_Sound,_RTC_and_VirtIO.md
+    name: Disable USB, Sound, RTC and VirtIO
+    order: 25
+  - url: 26-Disable_Filesystem_Encodings_and_Compatibility.md
+    name: Disable Filesystem Encodings and Compatibility
+    order: 26
+  - url: 27-Enable_Minimal_Cryptographic_Core_with_SHA3_and_XTS.md
+    name: Enable Minimal Cryptographic Core with SHA3 and XTS
+    order: 27
+  - url: 28-Disable_Hardware_Cryptography,_Keep_DRBG_and_Jitter_Entropy.md
+    name: Disable Hardware Cryptography, Keep DRBG and Jitter Entropy
+    order: 28
+  - url: 29-Disable_Kernel_Debugging_Features.md
+    name: Disable Kernel Debugging Features
+    order: 29
+  - url: 30-Disable_Filesystem_Verity_and_SecurityFS.md
+    name: Disable Filesystem Verity and SecurityFS
+    order: 30

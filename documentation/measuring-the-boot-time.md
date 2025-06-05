@@ -30,9 +30,9 @@ Measuring boot time on redpesk OS involves capturing how long it takes for the s
   loglevel=8 time initcall_debug
   ```
 
-  - *loglevel=8*: Ensures all messages are displayed, including debug messages.
-  - *time*: Displays timestamps for each log entry relative to the boot start.
-  - *initcall_debug*: This shows the time taken by each kernel subsystem or driver initialization function. to the bootloader configuration.
+  * *loglevel=8*: Ensures all messages are displayed, including debug messages.
+  * *time*: Displays timestamps for each log entry relative to the boot start.
+  * *initcall_debug*: This shows the time taken by each kernel subsystem or driver initialization function. to the bootloader configuration.
 
 * Analyze Dmesg Logs:
   Run dmesg after boot to see timestamps for kernel initialization. Subtract the initial timestamp from the last timestamp to calculate boot time.
@@ -287,3 +287,45 @@ Initcalls in the kernel are categorized into levels based on when they are execu
 * `late_initcall`: Late initialization tasks.
 
 initcall_debug logs the execution time for each of these levels, helping you identify the stage where bottlenecks occur.
+
+### why kernel boot time varies
+
+Although in theory a statically compiled Linux kernel on fixed hardware should boot in a reproducible amount of time, in practice the kernel boot time can vary — often by several hundred milliseconds, sometimes more. This variation is caused by multiple factors:
+
+#### asynchronous events and scheduler behavior
+
+The Linux kernel initializes many subsystems and drivers concurrently. The exact order of execution can vary due to:
+
+* asynchronous hardware interrupts (IRQs),
+* slight timing differences in when devices are probed,
+* variations in task scheduling and CPU context switches.
+
+Even with a single CPU core, small fluctuations in execution order can affect the total boot time.
+
+#### hardware detection variability
+
+The kernel probes all available devices during boot (PCI, USB, storage, etc.). This probing is not always deterministic and can vary due to:
+
+* device firmware response time,
+* peripheral readiness (e.g., USB devices waking up),
+* dynamic buses or hotplug-capable interfaces.
+
+These factors can introduce inconsistent delays during hardware initialization.
+
+#### CPU frequency scaling and thermal conditions
+
+If CPU frequency scaling is enabled, the kernel might run at different speeds depending on:
+
+* power management state at boot,
+* thermal conditions (cold vs warm boot),
+* BIOS/UEFI influence over initial CPU clock rates.
+
+This affects how fast the kernel can execute early instructions.
+
+#### microarchitectural and cache state
+
+Caches (L1/L2/L3), branch predictors, and memory buffers may start in different states depending on previous boots or system resets. These internal variations can slightly impact execution time in low-level routines.
+
+#### entropy and randomness sources
+
+While this primarily affects userspace, some early kernel operations may rely on hardware randomness or entropy sources, which can cause slight delays depending on timing and availability.

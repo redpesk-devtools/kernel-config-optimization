@@ -1,0 +1,96 @@
+diff --git a/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts b/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
+index 0c94911d7..c091d9a9f 100644
+--- a/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
++++ b/arch/arm64/boot/dts/ti/k3-am625-beagleplay.dts
+@@ -222,6 +222,7 @@ hdmi_connector_in: endpoint {
+ 				remote-endpoint = <&it66121_out>;
+ 			};
+ 		};
++		status = "disabled";
+ 	};
+ 
+ 	sound {
+@@ -239,6 +240,8 @@ hdmi_dailink_master: simple-audio-card,cpu {
+ 		simple-audio-card,codec {
+ 			sound-dai = <&it66121>;
+ 		};
++
++		status = "disabled";
+ 	};
+ 
+ 	grove_connector0: grove-connector0 {
+@@ -597,7 +600,7 @@ &mcu_i2c0 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&i2c_qwiic_pins_default>;
+ 	clock-frequency = <100000>;
+-	status = "okay";
++	status = "disabled";
+ };
+ 
+ &usbss0 {
+@@ -709,7 +712,7 @@ &main_i2c0 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&local_i2c_pins_default>;
+ 	clock-frequency = <400000>;
+-	status = "okay";
++	status = "disabled";
+ 
+ 	eeprom@50 {
+ 		compatible = "atmel,24c32";
+@@ -815,7 +818,7 @@ &main_i2c2 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&i2c2_1v8_pins_default>;
+ 	clock-frequency = <100000>;
+-	status = "okay";
++	status = "disabled";
+ 
+ 	it66121: bridge-hdmi@4c {
+ 		compatible = "ite,it66121";
+@@ -829,6 +832,7 @@ it66121: bridge-hdmi@4c {
+ 		interrupt-parent = <&main_gpio0>;
+ 		interrupts = <36 IRQ_TYPE_EDGE_FALLING>;
+ 		#sound-dai-cells = <0>;
++		status = "disabled";
+ 
+ 		ports {
+ 			#address-cells = <1>;
+@@ -858,7 +862,7 @@ &main_i2c3 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&mikrobus_i2c_pins_default>;
+ 	clock-frequency = <400000>;
+-	status = "okay";
++	status = "disabled";
+ };
+ 
+ &main_spi2 {
+@@ -945,7 +949,7 @@ mcu {
+ };
+ 
+ &dss {
+-	status = "okay";
++	status = "disabled";
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&dss0_pins_default>;
+ };
+@@ -962,7 +966,7 @@ dpi1_out: endpoint {
+ };
+ 
+ &mcasp1 {
+-	status = "okay";
++	status = "disabled";
+ 	#sound-dai-cells = <0>;
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&mcasp_hdmi_pins_default>;
+diff --git a/arch/arm64/boot/dts/ti/k3-am62x-sk-common.dtsi b/arch/arm64/boot/dts/ti/k3-am62x-sk-common.dtsi
+index 8fd36c916..bc43ceb26 100644
+--- a/arch/arm64/boot/dts/ti/k3-am62x-sk-common.dtsi
++++ b/arch/arm64/boot/dts/ti/k3-am62x-sk-common.dtsi
+@@ -532,7 +532,7 @@ &mcu_m4fss {
+ 	mboxes = <&mailbox0_cluster0 &mbox_m4_0>;
+ 	memory-region = <&mcu_m4fss_dma_memory_region>,
+ 			<&mcu_m4fss_memory_region>;
+-	status = "okay";
++	status = "disabled";
+ };
+ &wkup_r5fss0_core0 {
+ 	mboxes = <&mailbox0_cluster0 &mbox_r5_0>;
