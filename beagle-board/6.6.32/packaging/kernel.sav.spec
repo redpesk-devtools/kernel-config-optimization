@@ -69,8 +69,8 @@
 # gitX tags, so a 3 here would become part of release "0.rcX.gitX.3"
 #
 %global baserelease 1
-%global cfg_release 33
-%global cfg_tested 5
+%global cfg_release 1
+%global cfg_tested 0
 %global fedora_build %{baserelease}.%{cfg_release}.%{cfg_tested}
 
 %global zipmodules 1
@@ -391,9 +391,6 @@ Provides: %{name}-%{_target_cpu} = %{rpmversion}-%{pkg_release}%{?1:+%{1}}\
 Provides: kernel-drm-nouveau = 16\
 Provides: %{name}-uname-r = %{KVERREL}%{?variant}%{?1:+%{1}}\
 Requires(pre): %{kernel_prereq}\
-%if 0
-Requires(pre): %{initrd_prereq}\
-%endif
 Requires(pre): linux-firmware >= 20200619-99.git3890db36\
 Requires(preun): systemd >= 200\
 Conflicts: xfsprogs < 4.3.0-1\
