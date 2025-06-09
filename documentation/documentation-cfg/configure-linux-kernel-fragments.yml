@@ -35,7 +35,7 @@ books:
       - url: 10-Disable_Swap,_Memory_Hotplug_and_KSM.md
         name: Disable Swap, Memory Hotplug and KSM
         order: 10
-      - url: 11-Disable_Networking:_IPv4,_IPv6,_Netfilter.md
+      - url: 11-Disable_Networking_IPv4,_IPv6,_Netfilter.md
         name: Disable Networking - IPv4, IPv6, Netfilter
         order: 11
       - url: 12-Disable_SCTP,_VLAN,_TIPC,_BATMAN.md
@@ -50,7 +50,7 @@ books:
       - url: 15-Disable_GNSS_and_ProcEvents.md
         name: Disable GNSS and ProcEvents
         order: 15
-      - url: 16-Disable_Block_Storage:_NBD_and_AoE.md
+      - url: 16-Disable_Block_Storage_NBD_and_AoE.md
         name: Disable Block Storage - NBD and AoE
         order: 16
       - url: 17-Disable_EEPROM_and_Misc_Drivers.md
