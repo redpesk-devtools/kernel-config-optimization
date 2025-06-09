@@ -9,4 +9,3 @@ Configuration breakdown:
         CONFIG_EEPROM_AT25
         CONFIG_MISC_RTSX
         → → No detailed description available.
-

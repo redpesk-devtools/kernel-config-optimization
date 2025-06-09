@@ -8,4 +8,3 @@ Configuration breakdown:
         CONFIG_BLK_DEV_NBD
         CONFIG_ATA_OVER_ETH
         → → No detailed description available.
-

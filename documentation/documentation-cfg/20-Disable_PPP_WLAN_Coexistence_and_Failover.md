@@ -9,4 +9,3 @@ Configuration breakdown:
         CONFIG_WLAN_VENDOR_INTEL
         CONFIG_NET_FAILOVER
         → → No detailed description available.
-

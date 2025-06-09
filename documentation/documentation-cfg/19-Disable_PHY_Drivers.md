@@ -9,4 +9,3 @@ Configuration breakdown:
         CONFIG_MARVELL_PHY
         CONFIG_REALTEK_PHY
         → → No detailed description available.
-

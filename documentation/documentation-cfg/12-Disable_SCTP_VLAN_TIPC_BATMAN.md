@@ -10,4 +10,3 @@ Configuration breakdown:
         CONFIG_TIPC
         CONFIG_BATMAN_ADV
         → → No detailed description available.
-

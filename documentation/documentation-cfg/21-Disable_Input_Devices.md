@@ -1,13 +1,28 @@
-21 - Disable Input Devices
+# 21 - Disable Input Devices
 
-Summary: This fragment disables support for most input devices such as keyboards, mice, joysticks, and touchscreens. It is intended for headless or appliance-style systems.
-Configuration breakdown:
+## Summary
 
-    General input devices
+This fragment disables support for most input devices such as keyboards, mice, joysticks, and touchscreens. It is intended for headless or appliance-style systems.
 
-        CONFIG_INPUT_KEYBOARD
-        CONFIG_INPUT_MOUSE
-        CONFIG_INPUT_JOYSTICK
-        CONFIG_INPUT_TOUCHSCREEN
-        → → No detailed description available.
+## Configuration breakdown
 
+### General input devices
+
+```none
+CONFIG_INPUT_KEYBOARD
+CONFIG_INPUT_MOUSE
+CONFIG_INPUT_JOYSTICK
+CONFIG_INPUT_TOUCHSCREEN
+```
+
+* Disables keyboard input support.
+
+* Disables mouse input support.
+
+* Disables joystick input support.
+
+* Disables touchscreen input support.
+
+## Where to find a cfg sample
+
+[21-Config-Disable-Input-Devices.cfg](../../beagle-board/6.6.32/packaging/21-Config-Disable-Input-Devices.cfg)

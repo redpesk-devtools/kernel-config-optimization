@@ -15,4 +15,3 @@ Configuration breakdown:
 
         CONFIG_CAN
         → → No detailed description available.
-

@@ -15,4 +15,3 @@ Configuration breakdown:
         CONFIG_NF_TABLES
         CONFIG_NF_CONNTRACK
         → → No detailed description available.
-

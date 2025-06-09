@@ -8,4 +8,3 @@ Configuration breakdown:
         CONFIG_GNSS
         CONFIG_PROC_EVENTS
         → → No detailed description available.
-

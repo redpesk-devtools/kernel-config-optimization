@@ -8,4 +8,3 @@ Configuration breakdown:
         CONFIG_PCI
         CONFIG_FW_LOADER
         → → No detailed description available.
-

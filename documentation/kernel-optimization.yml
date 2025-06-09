@@ -11,12 +11,9 @@ books:
       - url: optimize-boot-time.md
         name: Why to optimize boot time
         order: 2
-      - url: configure-linux-kernel.md
-        name: Configure Linux kernel for booting faster
-        order: 3
       - url: optimize-boot-strategies.md
         name: Managing boot strategies
-        order: 4
+        order: 3
       - url: boot-time-measure.md
         name: Measures before and after optimization
-        order: 5
+        order: 4
