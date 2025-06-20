@@ -27,4 +27,4 @@ CONFIG_FUNCTION_ALIGNMENT
 
 ## Where to find a cfg sample
 
-[07-Config-Disable-GCC-Plugins-and-Function-Alignment.cfg](../../beagle-board/6.6.32/packaging/07-Config-Disable-GCC-Plugins-and-Function-Alignment.cfg)
+[07-Config-No-GCC-Plugins-Block-Align.cfg](../../beagle-board/6.6.32/packaging/07-Config-No-GCC-Plugins-Block-Align.cfg)

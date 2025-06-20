@@ -19,4 +19,4 @@ CONFIG_CRYPTO_XTS
 
 ## Where to find a cfg sample
 
-[27-Config-Enable-Minimal-Cryptographic-Core-with-SHA3-and-XTS.cfg](../../beagle-board/6.6.32/packaging/27-Config-Enable-Minimal-Cryptographic-Core-with-SHA3-and-XTS.cfg)
+[27-Config-Crypto-Core-SHA3-XTS.cfg](../../beagle-board/6.6.32/packaging/27-Config-Crypto-Core-SHA3-XTS.cfg)

@@ -10,3 +10,9 @@ Configuration breakdown:
         CONFIG_TIPC
         CONFIG_BATMAN_ADV
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[12-Config-SCTP-No-VLAN-TIPC-BATMAN.cfg](../../beagle-board/6.6.32/packaging/12-Config-SCTP-No-VLAN-TIPC-BATMAN.cfg)

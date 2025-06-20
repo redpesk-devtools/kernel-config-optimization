@@ -9,3 +9,9 @@ Configuration breakdown:
         CONFIG_NET_VENDOR_INTEL
         CONFIG_BONDING
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[18-Config-No-Network-Devices-Bond-Vendor.cfg](../../beagle-board/6.6.32/packaging/18-Config-No-Network-Devices-Bond-Vendor.cfg)

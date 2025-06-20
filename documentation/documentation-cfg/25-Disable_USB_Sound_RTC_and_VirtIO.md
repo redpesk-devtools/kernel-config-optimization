@@ -25,4 +25,4 @@ CONFIG_VIRTIO
 
 ## Where to find a cfg sample
 
-[25-Config-Disable-USB-Sound-RTC-and-VirtIO.cfg](../../beagle-board/6.6.32/packaging/25-Config-Disable-USB-Sound-RTC-and-VirtIO.cfg)
+[25-Config-No-USB-Sound-RTC-VirtIO.cfg](../../beagle-board/6.6.32/packaging/25-Config-No-USB-Sound-RTC-VirtIO.cfg)

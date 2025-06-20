@@ -15,3 +15,9 @@ Configuration breakdown:
 
         CONFIG_CAN
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[13-Config-Disabled-Wireless-BT-CAN-RFKILL.cfg](../../beagle-board/6.6.32/packaging/13-Config-Disabled-Wireless-BT-CAN-RFKILL.cfg)

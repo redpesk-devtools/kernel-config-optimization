@@ -9,3 +9,9 @@ Configuration breakdown:
         CONFIG_EEPROM_AT25
         CONFIG_MISC_RTSX
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[17-Config-Eeprom-93CX6-Others-Disabled.cfg](../../beagle-board/6.6.32/packaging/17-Config-Eeprom-93CX6-Others-Disabled.cfg)

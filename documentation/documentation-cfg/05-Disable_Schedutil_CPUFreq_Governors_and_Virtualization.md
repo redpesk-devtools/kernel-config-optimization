@@ -39,4 +39,4 @@ CONFIG_VIRTUALIZATION
 
 ## Where to find a cfg sample
 
-[05-Config-Disable-Schedutil-CPUFreq-Governors-and-Virtualization.cfg](../../beagle-board/6.6.32/packaging/05-Config-Disable-Schedutil-CPUFreq-Governors-and-Virtualization.cfg)
+[05-Config-CPUFreq-Schedutil-No-Virt.cfg](../../beagle-board/6.6.32/packaging/05-Config-CPUFreq-Schedutil-No-Virt.cfg)

@@ -24,4 +24,4 @@ CONFIG_JUMP_LABEL
 
 ## Where to find a cfg sample
 
-[06-Config-Disable-Kprobes-and-Jump-Labels.cfg](../../beagle-board/6.6.32/packaging/06-Config-Disable-Kprobes-and-Jump-Labels.cfg)
+[06-Config-Disabled-Kprobes-Jumplabel.cfg](../../beagle-board/6.6.32/packaging/06-Config-Disabled-Kprobes-Jumplabel.cfg)

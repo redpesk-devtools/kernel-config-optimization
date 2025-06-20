@@ -9,3 +9,9 @@ Configuration breakdown:
         CONFIG_WLAN_VENDOR_INTEL
         CONFIG_NET_FAILOVER
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[20-Config-No-PPP-WLAN-Yes-Failover.cfg](../../beagle-board/6.6.32/packaging/20-Config-No-PPP-WLAN-Yes-Failover.cfg)

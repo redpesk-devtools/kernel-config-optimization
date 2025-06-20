@@ -9,3 +9,9 @@ Configuration breakdown:
         CONFIG_MARVELL_PHY
         CONFIG_REALTEK_PHY
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[19-Config-Disabled-PHY-Drivers.cfg](../../beagle-board/6.6.32/packaging/19-Config-Disabled-PHY-Drivers.cfg)

@@ -8,3 +8,9 @@ Configuration breakdown:
         CONFIG_BLK_DEV_NBD
         CONFIG_ATA_OVER_ETH
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[16-Config-Disabled-Block-NBD-AoE.cf](../../beagle-board/6.6.32/packaging/16-Config-Disabled-Block-NBD-AoE.cf)

@@ -22,4 +22,4 @@ CONFIG_MEDIA_SUPPORT
 
 ## Where to find a cfg sample
 
-[24-Config-Disable-MFD-Display-and-Media-Drivers.cfg](../../beagle-board/6.6.32/packaging/24-Config-Disable-MFD-Display-and-Media-Drivers.cfg)
+[24-Config-No-MFD-Display-Media.cfg](../../beagle-board/6.6.32/packaging/24-Config-No-MFD-Display-Media.cfg)

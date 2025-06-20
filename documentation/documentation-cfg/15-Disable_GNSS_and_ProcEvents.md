@@ -8,3 +8,9 @@ Configuration breakdown:
         CONFIG_GNSS
         CONFIG_PROC_EVENTS
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[15-Config-No-GNSS-ProcEvents.cfg](../../beagle-board/6.6.32/packaging/15-Config-No-GNSS-ProcEvents.cfg)

@@ -22,4 +22,4 @@ CONFIG_SYSV68_PARTITION
 
 ## Where to find a cfg sample
 
-[08-Config-Disable-Partition-Parsers.cfg](../../beagle-board/6.6.32/packaging/08-Config-Disable-Partition-Parsers.cfg)
+[08-Config-Disabled-Partitions.cfg](../../beagle-board/6.6.32/packaging/08-Config-Disabled-Partitions.cfg)

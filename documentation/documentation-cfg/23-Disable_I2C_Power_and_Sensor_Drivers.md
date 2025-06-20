@@ -25,4 +25,4 @@ CONFIG_HWMON
 
 ## Where to find a cfg sample
 
-[23-Config-Disable-I2C-Power-and-Sensor-Drivers.cfg](../../beagle-board/6.6.32/packaging/23-Config-Disable-I2C-Power-and-Sensor-Drivers.cfg)
+[23-Config-Disabled-I2C-Power-Sensors.cfg](../../beagle-board/6.6.32/packaging/23-Config-Disabled-I2C-Power-Sensors.cfg)

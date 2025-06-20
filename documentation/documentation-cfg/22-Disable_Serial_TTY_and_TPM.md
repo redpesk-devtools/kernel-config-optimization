@@ -30,4 +30,4 @@ CONFIG_TCG_TPM
 
 ## Where to find a cfg sample
 
-[22-Config-Disable-Serial-TTY-and-TPM.cfg](../../beagle-board/6.6.32/packaging/22-Config-Disable-Serial-TTY-and-TPM.cfg)
+[22-Config-No-Serial-TTY-TPM.cfg](../../beagle-board/6.6.32/packaging/22-Config-No-Serial-TTY-TPM.cfg)

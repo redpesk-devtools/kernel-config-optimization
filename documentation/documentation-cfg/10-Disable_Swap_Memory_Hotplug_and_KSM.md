@@ -22,4 +22,4 @@ CONFIG_KSM
 
 ## Where to find a cfg sample
 
-[10-Config-Disable-Swap-Memory-Hotplug-and-KSM.cfg](../../beagle-board/6.6.32/packaging/10-Config-Disable-Swap-Memory-Hotplug-and-KSM.cfg)
+[10-Config-No-Swap-Hotplug-KSM.cfg](../../beagle-board/6.6.32/packaging/10-Config-No-Swap-Hotplug-KSM.cfg)

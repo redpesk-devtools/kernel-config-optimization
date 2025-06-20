@@ -8,3 +8,9 @@ Configuration breakdown:
         CONFIG_PCI
         CONFIG_FW_LOADER
         → → No detailed description available.
+
+
+## Where to find a cfg sample
+
+
+[14-Config-Disabled-PCI-Firmware.cfg](../../beagle-board/6.6.32/packaging/14-Config-Disabled-PCI-Firmware.cfg)

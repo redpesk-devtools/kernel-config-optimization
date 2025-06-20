@@ -32,4 +32,4 @@ CONFIG_ENERGY_MODEL
 
 ## Where to find a cfg sample
 
-[04-Config-Disable-EFI-Power-Management-Debug-and-Energy-Model.cfg](../../beagle-board/6.6.32/packaging/04-Config-Disable-EFI-Power-Management-Debug-and-Energy-Model.cfg)
+[04-Config-Disabled-EFI-Power-Debug.cfg](../../beagle-board/6.6.32/packaging/04-Config-Disabled-EFI-Power-Debug.cfg)

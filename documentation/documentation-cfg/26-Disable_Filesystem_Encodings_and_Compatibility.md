@@ -22,4 +22,4 @@ CONFIG_FAT_DEFAULT_IOCHARSET
 
 ## Where to find a cfg sample
 
-[26-Config-Disable-Filesystem-Encodings-and-Compatibility.cfg](../../beagle-board/6.6.32/packaging/26-Config-Disable-Filesystem-Encodings-and-Compatibility.cfg)
+[26-Config-No-FS-Encodings.cfg](../../beagle-board/6.6.32/packaging/26-Config-No-FS-Encodings.cfg)
