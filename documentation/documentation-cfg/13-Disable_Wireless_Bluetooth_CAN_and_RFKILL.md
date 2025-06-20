@@ -17,8 +17,9 @@ This fragment disables wireless communications including Wi-Fi, Bluetooth, CAN b
 
 ### CAN bus
 
+```none
         CONFIG_CAN
-        → → No detailed description available.
+```
 
 
 ## Where to find a cfg sample
