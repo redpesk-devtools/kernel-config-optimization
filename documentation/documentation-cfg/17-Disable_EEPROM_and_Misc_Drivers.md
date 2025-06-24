@@ -18,4 +18,4 @@ This fragment disables support for miscellaneous EEPROM chip drivers and similar
 ## Where to find a cfg sample
 
 
-[17-Config-Eeprom-93CX6-Others-Disabled.cfg](../../beagle-board/6.6.32/packaging/17-Config-Eeprom-93CX6-Others-Disabled.cfg)
+[17-Config-Eeprom-93CX6-Others-Disabled.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/17-Config-Eeprom-93CX6-Others-Disabled.cfg)

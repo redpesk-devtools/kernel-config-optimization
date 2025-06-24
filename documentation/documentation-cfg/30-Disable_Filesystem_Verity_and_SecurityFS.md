@@ -19,4 +19,4 @@ CONFIG_SECURITYFS
 
 ## Where to find a cfg sample
 
-[30-Config-No-FS-Verity-SecurityFS.cfg](../../beagle-board/6.6.32/packaging/30-Config-No-FS-Verity-SecurityFS.cfg)
+[30-Config-No-FS-Verity-SecurityFS.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/30-Config-No-FS-Verity-SecurityFS.cfg)

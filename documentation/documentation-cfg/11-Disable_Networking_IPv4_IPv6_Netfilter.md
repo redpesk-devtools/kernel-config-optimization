@@ -25,4 +25,4 @@ This fragment disables major networking protocols and packet filtering subsystem
 ## Where to find a cfg sample
 
 
-[11-Config-Disabled-Network-IPV4-IPV6-Netfilter.cfg](../../beagle-board/6.6.32/packaging/11-Config-Disabled-Network-IPV4-IPV6-Netfilter.cfg)
+[11-Config-Disabled-Network-IPV4-IPV6-Netfilter.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/11-Config-Disabled-Network-IPV4-IPV6-Netfilter.cfg)

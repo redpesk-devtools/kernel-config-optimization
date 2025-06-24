@@ -17,4 +17,4 @@ This fragment disables network-based block device drivers such as NBD (Network B
 ## Where to find a cfg sample
 
 
-[16-Config-Disabled-Block-NBD-AoE.cf](../../beagle-board/6.6.32/packaging/16-Config-Disabled-Block-NBD-AoE.cfg)
+[16-Config-Disabled-Block-NBD-AoE.cf](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/16-Config-Disabled-Block-NBD-AoE.cfg)

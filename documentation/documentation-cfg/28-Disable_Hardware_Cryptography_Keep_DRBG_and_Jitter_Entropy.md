@@ -22,4 +22,4 @@ CONFIG_CRYPTO_HW
 
 ## Where to find a cfg sample
 
-[28-Config-Crypto-DRBG-Jitter-No-HW.cfg](../../beagle-board/6.6.32/packaging/28-Config-Crypto-DRBG-Jitter-No-HW.cfg)
+[28-Config-Crypto-DRBG-Jitter-No-HW.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/28-Config-Crypto-DRBG-Jitter-No-HW.cfg)

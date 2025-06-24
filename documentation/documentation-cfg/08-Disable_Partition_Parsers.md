@@ -22,4 +22,4 @@ CONFIG_SYSV68_PARTITION
 
 ## Where to find a cfg sample
 
-[08-Config-Disabled-Partitions.cfg](../../beagle-board/6.6.32/packaging/08-Config-Disabled-Partitions.cfg)
+[08-Config-Disabled-Partitions.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/08-Config-Disabled-Partitions.cfg)

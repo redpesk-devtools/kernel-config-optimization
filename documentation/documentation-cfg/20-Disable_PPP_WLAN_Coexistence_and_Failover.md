@@ -18,4 +18,4 @@ This fragment disables Point-to-Point Protocol (PPP), Wi-Fi coexistence support,
 ## Where to find a cfg sample
 
 
-[20-Config-No-PPP-WLAN-Yes-Failover.cfg](../../beagle-board/6.6.32/packaging/20-Config-No-PPP-WLAN-Yes-Failover.cfg)
+[20-Config-No-PPP-WLAN-Yes-Failover.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/20-Config-No-PPP-WLAN-Yes-Failover.cfg)

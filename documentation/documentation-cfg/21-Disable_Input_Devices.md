@@ -25,4 +25,4 @@ CONFIG_INPUT_TOUCHSCREEN
 
 ## Where to find a cfg sample
 
-[21-Config-No-Input-Devices.cfg](../../beagle-board/6.6.32/packaging/21-Config-No-Input-Devices.cfg)
+[21-Config-No-Input-Devices.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/21-Config-No-Input-Devices.cfg)

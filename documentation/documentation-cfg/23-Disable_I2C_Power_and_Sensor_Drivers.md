@@ -25,4 +25,4 @@ CONFIG_HWMON
 
 ## Where to find a cfg sample
 
-[23-Config-Disabled-I2C-Power-Sensors.cfg](../../beagle-board/6.6.32/packaging/23-Config-Disabled-I2C-Power-Sensors.cfg)
+[23-Config-Disabled-I2C-Power-Sensors.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/23-Config-Disabled-I2C-Power-Sensors.cfg)

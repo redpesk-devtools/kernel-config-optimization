@@ -25,4 +25,4 @@ CONFIG_ARCH_INLINE_SPIN_UNLOCK_IRQ
 
 ## Where to find a cfg sample
 
-[09-Config-Arch-Inline-Spinlocks.cfg](../../beagle-board/6.6.32/packaging/09-Config-Arch-Inline-Spinlocks.cfg)
+[09-Config-Arch-Inline-Spinlocks.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/09-Config-Arch-Inline-Spinlocks.cfg)

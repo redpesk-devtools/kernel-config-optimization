@@ -27,4 +27,4 @@ CONFIG_FUNCTION_ALIGNMENT
 
 ## Where to find a cfg sample
 
-[07-Config-No-GCC-Plugins-Block-Align.cfg](../../beagle-board/6.6.32/packaging/07-Config-No-GCC-Plugins-Block-Align.cfg)
+[07-Config-No-GCC-Plugins-Block-Align.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/07-Config-No-GCC-Plugins-Block-Align.cfg)

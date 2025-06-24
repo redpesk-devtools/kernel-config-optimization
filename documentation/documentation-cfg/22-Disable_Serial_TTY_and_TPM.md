@@ -30,4 +30,4 @@ CONFIG_TCG_TPM
 
 ## Where to find a cfg sample
 
-[22-Config-No-Serial-TTY-TPM.cfg](../../beagle-board/6.6.32/packaging/22-Config-No-Serial-TTY-TPM.cfg)
+[22-Config-No-Serial-TTY-TPM.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/22-Config-No-Serial-TTY-TPM.cfg)

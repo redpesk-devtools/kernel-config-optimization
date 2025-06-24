@@ -18,4 +18,4 @@ This fragment disables support for network interface drivers, including bonding 
 ## Where to find a cfg sample
 
 
-[18-Config-No-Network-Devices-Bond-Vendor.cfg](../../beagle-board/6.6.32/packaging/18-Config-No-Network-Devices-Bond-Vendor.cfg)
+[18-Config-No-Network-Devices-Bond-Vendor.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/18-Config-No-Network-Devices-Bond-Vendor.cfg)

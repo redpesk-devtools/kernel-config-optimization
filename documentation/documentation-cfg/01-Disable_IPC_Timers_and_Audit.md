@@ -62,4 +62,4 @@ CONFIG_TASKSTATS
 
 For beagle-board and linux kernell 6.6.32:
 
-[01-Config-Disabled-IPC-Timers-Audit.cfg](../../beagle-board/6.6.32/packaging/01-Config-Disabled-IPC-Timers-Audit.cfg)
+[01-Config-Disabled-IPC-Timers-Audit.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/01-Config-Disabled-IPC-Timers-Audit.cfg)

@@ -22,4 +22,4 @@ CONFIG_DEBUG_INFO
 
 ## Where to find a cfg sample
 
-[29-Config-No-Kernel-Debug.cfg](../../beagle-board/6.6.32/packaging/29-Config-No-Kernel-Debug.cfg)
+[29-Config-No-Kernel-Debug.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/29-Config-No-Kernel-Debug.cfg)

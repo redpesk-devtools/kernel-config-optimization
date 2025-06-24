@@ -17,4 +17,4 @@ This fragment disables GNSS (Global Navigation Satellite System) support and ker
 ## Where to find a cfg sample
 
 
-[15-Config-No-GNSS-ProcEvents.cfg](../../beagle-board/6.6.32/packaging/15-Config-No-GNSS-ProcEvents.cfg)
+[15-Config-No-GNSS-ProcEvents.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/15-Config-No-GNSS-ProcEvents.cfg)

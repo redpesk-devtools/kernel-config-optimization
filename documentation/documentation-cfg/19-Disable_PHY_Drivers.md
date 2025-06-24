@@ -18,4 +18,4 @@ This fragment disables PHY (physical layer) drivers for Ethernet and similar har
 ## Where to find a cfg sample
 
 
-[19-Config-Disabled-PHY-Drivers.cfg](../../beagle-board/6.6.32/packaging/19-Config-Disabled-PHY-Drivers.cfg)
+[19-Config-Disabled-PHY-Drivers.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/19-Config-Disabled-PHY-Drivers.cfg)

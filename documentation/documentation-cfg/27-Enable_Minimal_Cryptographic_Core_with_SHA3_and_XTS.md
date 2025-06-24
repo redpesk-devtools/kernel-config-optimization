@@ -19,4 +19,4 @@ CONFIG_CRYPTO_XTS
 
 ## Where to find a cfg sample
 
-[27-Config-Crypto-Core-SHA3-XTS.cfg](../../beagle-board/6.6.32/packaging/27-Config-Crypto-Core-SHA3-XTS.cfg)
+[27-Config-Crypto-Core-SHA3-XTS.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/27-Config-Crypto-Core-SHA3-XTS.cfg)

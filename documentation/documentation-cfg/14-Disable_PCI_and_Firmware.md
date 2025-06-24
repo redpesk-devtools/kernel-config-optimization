@@ -16,4 +16,4 @@ This fragment disables PCI subsystem support and firmware loading helpers. Embed
 ## Where to find a cfg sample
 
 
-[14-Config-Disabled-PCI-Firmware.cfg](../../beagle-board/6.6.32/packaging/14-Config-Disabled-PCI-Firmware.cfg)
+[14-Config-Disabled-PCI-Firmware.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/14-Config-Disabled-PCI-Firmware.cfg)

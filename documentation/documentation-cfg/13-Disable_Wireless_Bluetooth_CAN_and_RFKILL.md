@@ -25,4 +25,4 @@ This fragment disables wireless communications including Wi-Fi, Bluetooth, CAN b
 ## Where to find a cfg sample
 
 
-[13-Config-Disabled-Wireless-BT-CAN-RFKILL.cfg](../../beagle-board/6.6.32/packaging/13-Config-Disabled-Wireless-BT-CAN-RFKILL.cfg)
+[13-Config-Disabled-Wireless-BT-CAN-RFKILL.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/13-Config-Disabled-Wireless-BT-CAN-RFKILL.cfg)

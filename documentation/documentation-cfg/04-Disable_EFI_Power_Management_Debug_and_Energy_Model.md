@@ -32,4 +32,4 @@ CONFIG_ENERGY_MODEL
 
 ## Where to find a cfg sample
 
-[04-Config-Disabled-EFI-Power-Debug.cfg](../../beagle-board/6.6.32/packaging/04-Config-Disabled-EFI-Power-Debug.cfg)
+[04-Config-Disabled-EFI-Power-Debug.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/04-Config-Disabled-EFI-Power-Debug.cfg)

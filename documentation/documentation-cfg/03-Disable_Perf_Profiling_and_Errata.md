@@ -50,4 +50,4 @@ CONFIG_ARM64_ERRATUM_1742098
 
 ## Where to find a cfg sample
 
-[03-Config-Disabled-Perf-Profiling-Errata.cfg](../../beagle-board/6.6.32/packaging/03-Config-Disabled-Perf-Profiling-Errata.cfg)
+[03-Config-Disabled-Perf-Profiling-Errata.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/03-Config-Disabled-Perf-Profiling-Errata.cfg)

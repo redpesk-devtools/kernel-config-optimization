@@ -19,4 +19,4 @@
 ## Where to find a cfg sample
 
 
-[12-Config-SCTP-No-VLAN-TIPC-BATMAN.cfg](../../beagle-board/6.6.32/packaging/12-Config-SCTP-No-VLAN-TIPC-BATMAN.cfg)
+[12-Config-SCTP-No-VLAN-TIPC-BATMAN.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/12-Config-SCTP-No-VLAN-TIPC-BATMAN.cfg)

@@ -35,4 +35,4 @@ CONFIG_BLK_DEV_INITRD
 
 ## Where to find a cfg sample
 
-[02-Config-Disabled-Kconfig-Scheduler-Initrd.cfg](../../beagle-board/6.6.32/packaging/02-Config-Disabled-Kconfig-Scheduler-Initrd.cfg)
+[02-Config-Disabled-Kconfig-Scheduler-Initrd.cfg](https://raw.githubusercontent.com/redpesk-devtools/kernel-config-optimization/refs/heads/master/beagle-board/6.6.32/packaging/02-Config-Disabled-Kconfig-Scheduler-Initrd.cfg)
